@@ -16,5 +16,10 @@ pipeline {
                 bat "mvn -f RestService/pom.xml test"
         }
     }
+    
+         stage('Cucumber Reports'){
+         steps  {
+         cucumber buildStatus: "UNSTABLE",
+         fileIncludePattern: "**/*feature.Employee.json"
   }
 }

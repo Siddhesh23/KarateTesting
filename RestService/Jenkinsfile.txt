@@ -13,13 +13,13 @@ pipeline {
 
          stage('testing stage') {
              steps {
-                bat "mvn test"
+                bat "mvn -f RestService/pom.xml test"
         }
     }
 
           stage('deployment stage') {
               steps {
-                bat "mvn deploy"
+                bat "mvn -f RestService/pom.xml deploy"
         }
     }
 

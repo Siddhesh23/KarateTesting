@@ -16,13 +16,5 @@ pipeline {
                 bat "mvn -f RestService/pom.xml test"
         }
     }
-
-          stage('deployment stage') {
-              steps {
-                bat "mvn -f RestService/pom.xml deploy"
-        }
-    }
-
   }
-
 }

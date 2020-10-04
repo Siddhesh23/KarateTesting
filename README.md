@@ -29,6 +29,7 @@ Also, Jenkins pipeline has been created for the following jobs:
 2. Test 
 3. Generate Cucumber reports
 4. Send Email Notifications
+
 The pipeline has been scheduled for daily basis twice from 7am to 12noon
 The Jenkinsfile for pipeline code has been checked into the project
 

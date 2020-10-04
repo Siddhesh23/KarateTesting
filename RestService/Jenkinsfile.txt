@@ -25,13 +25,14 @@ pipeline {
     }
     
      stage('Email Notifications'){
+     steps  {
 emailext body: '''Hi,
 
 This is a notification for your Jenkins Pipeline
 
 Thanks!''', subject: 'Jenkins Pipeline Notification', to: 'jenkinsemailtest2020@gmail.com'
     }
-    
+    }
     
     
   }

@@ -23,5 +23,16 @@ pipeline {
          fileIncludePattern: "**/*feature.Employee.json"
            }
     }
+    
+     stage('Email Notifications'){
+emailext body: '''Hi,
+
+This is a notification for your Jenkins Pipeline
+
+Thanks!''', subject: 'Jenkins Pipeline Notification', to: 'jenkinsemailtest2020@gmail.com'
+    }
+    
+    
+    
   }
 }

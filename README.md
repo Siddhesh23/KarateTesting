@@ -23,9 +23,9 @@ The project has relative paths used for specifying the location of json files, h
 Jenkins:
 The project is integerated into Jenkins.
 The Global Tool Configurations for JDK (11.0.7) and Maven (3.6.3) have been set accordingly
-The configurtations for sending email notifications to email id:jenkinsemailtest2020@gmail.com done in Configure System
+The configurtations for sending email notifications to email id: jenkinsemailtest2020@gmail.com done in Configure System
 Also, Jenkins pipeline has been created for the following jobs:
-1) Compile 2)Test 3) Generate Cucumber reports 4)Send Email Notifications
+1) Compile 2) Test 3) Generate Cucumber reports 4) Send Email Notifications
 The pipeline has been scheduled for daily basis twice from 7am to 12noon
 The Jenkinsfile for pipeline code has been checked into the project
 
